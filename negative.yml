@@ -1,0 +1,8 @@
+provider:
+  name: openfaas
+  gateway: http://observers.tendigittext.com:8080
+functions:
+  negative:
+    lang: node
+    handler: ./negative
+    image: tdcbridge/negative:latest
